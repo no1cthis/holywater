@@ -80,6 +80,3 @@ I assume that to ensure consistency between the admin panel and the web applicat
   - `routing/`: Resource routing configuration for the application.
   - `schemas/`: JSON schemas and utilities for data modeling.
   - `utils/`: General utility functions for tasks like image processing and uploads.
-
-## Contributing
-Contributions are welcome! Please follow the standard Git workflow for submitting changes.
