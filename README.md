@@ -54,14 +54,32 @@ I assume that to ensure consistency between the admin panel and the web applicat
 1. Clone the repository.
 2. Install dependencies using `pnpm install`.
 3. Start the development server using `pnpm start`.
-4. Access the application at `http://localhost:3000`.
+4. Access the application at `http://localhost:5173/`.
 
 ## Folder Structure
+
 - `src/`: Contains the source code for the application.
-  - `api/`: Backend API logic, including routes, controllers, and services.
-  - `components/`: Reusable React components.
-  - `schemas/`: JSON schemas for data modeling.
-  - `utils/`: Utility functions and helpers.
+  - `api/`: Backend API logic, including routes, controllers, services, and utilities.
+    - `mongodb/`: MongoDB-related logic, including models, controllers, and CRUD services.
+    - `routes/`: API route definitions for various resources.
+    - `s3-bucket/`: S3 bucket integration and emulators.
+    - `utils/`: Helper functions for API operations, such as filtering, sorting, and response formatting.
+  - `common/`: Shared constants and type definitions used across the application.
+  - `components/`: Reusable React components for UI and functionality.
+    - `buttons/`: Custom button components.
+    - `filters/`: Components for filtering data.
+    - `form/`: Custom form widgets for JSON schema forms.
+    - `layout/`: Layout components.
+    - `ui/`: General UI components like previews and selectors.
+  - `hooks/`: Custom React hooks for managing state and logic.
+  - `pages/`: Page components for different sections of the application.
+    - `movies/`: Pages for managing movies (create, edit, list, show).
+    - `screen-configurations/`: Pages for managing screen configurations.
+    - `sections/`: Pages for managing sections.
+  - `providers/`: Context providers for global state management.
+  - `routing/`: Resource routing configuration for the application.
+  - `schemas/`: JSON schemas and utilities for data modeling.
+  - `utils/`: General utility functions for tasks like image processing and uploads.
 
 ## Contributing
 Contributions are welcome! Please follow the standard Git workflow for submitting changes.
